@@ -5,7 +5,8 @@
 
 ## Getting Started
 
-1. Install the Chrome Extension at [**Chrome Web Store**](https://chrome.google.com/webstore/detail/crx-mortal/plbhlfecmbmkphfgcpoijlidjapddidj?utm_source=github)
+1. Install the extension at [**Chrome Web Store**](https://chrome.google.com/webstore/detail/crx-mortal/plbhlfecmbmkphfgcpoijlidjapddidj?utm_source=github)
+2. Submit your game at https://mjai.ekyu.moe/
 
 ## Development
 
@@ -17,25 +18,15 @@ Prerequisites:
 Run:
 
 ```bash
-./app start
+npm run watch
 ```
 
 For the release:
 
 ```bash
-./app release
+npm run build
 ```
 
 ## Project Links
 
-* Upstream work: [trunk](https://github.com/announce/crx-mortal/compare/master...ymkjp:master)
-* Demo app: [crx](https://chrome.google.com/webstore/detail/crx-mortal/plbhlfecmbmkphfgcpoijlidjapddidj?utm_source=github)
 * Release: [Chrome Developer Dashboard](https://chrome.google.com/webstore/developer/dashboard)
-
-## Documents
-
-* CRX
-  * [Declare Permissions](https://developer.chrome.com/extensions/declare_permissions)
-  * [chrome\.i18n](https://developer.chrome.com/extensions/i18n)
-* ImageMagick
-  * [Text Handling \- IM v6](http://www.imagemagick.org/Usage/text/#label_bestfit)
