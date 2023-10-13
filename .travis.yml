@@ -1,0 +1,13 @@
+# https://docs.travis-ci.com/user/docker/
+# https://docs.travis-ci.com/user/languages/javascript-with-nodejs/
+sudo: required
+language: node_js
+node_js:
+- "lts/carbon"
+services:
+  - docker
+cache: yarn
+before_script:
+- export FIREBASE_API_KEY="__YOURS_HERE__"
+script:
+- yarn run test
