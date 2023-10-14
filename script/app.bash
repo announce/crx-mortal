@@ -3,20 +3,16 @@
 app () {
   set -u
 
-  start () {
-    export NODE_ENV=development
-    npm start
+  bundle-dist () {
+    [[ $(command -v zip) ]] || return
+    zip -r ./var/dist-$(date +%s).zip ./dist/*
   }
 
-  release () {
-    export NODE_ENV=production
-    npm run build
-  }
-
-  die () {
-    MESSAGE="${1:-Something went wrong.}"
-    echo "[$(basename "$0")] ERROR: ${MESSAGE}" >&2
-    exit 1
+  update-manifest-version () {
+    [[ $(command -v jq) ]] || return
+    PACKAGE_VERSION="$(jq '.version' package.json)"
+    MANIFEST="$(jq ".version = ${PACKAGE_VERSION}" public/manifest.json)"
+    echo -e "${MANIFEST}" > public/manifest.json
   }
 
   usage () {

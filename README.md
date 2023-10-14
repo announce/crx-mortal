@@ -5,28 +5,26 @@
 
 ## Getting Started
 
-1. Install the extension at [**Chrome Web Store**](https://chrome.google.com/webstore/detail/crx-mortal/plbhlfecmbmkphfgcpoijlidjapddidj?utm_source=github)
-2. Submit your game at https://mjai.ekyu.moe/
+1. Install the extension at [**Chrome Web Store**](https://chrome.google.com/webstore/detail/crx-mortal/fgnhcpkfpdiaeikgdjbgfodclmnpbjno?utm_source=github)
+2. Submit your game log at https://mjai.ekyu.moe/
 
 ## Development
 
 Prerequisites:
 
-* Docker
 * Node v18
+* `jq` command
 
-Run:
+To run in the development mode:
 
 ```bash
 npm run watch
 ```
 
-For the release:
+To release the extension:
 
 ```bash
 npm run build
 ```
 
-## Project Links
-
-* Release: [Chrome Developer Dashboard](https://chrome.google.com/webstore/developer/dashboard)
+Then submit the bundled package at: [Chrome Developer Dashboard](https://chrome.google.com/webstore/developer/dashboard)

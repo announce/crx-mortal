@@ -8,7 +8,7 @@ const Popup = () => {
   useEffect(() => {
     (async () => {
       await chrome.action.setBadgeText({ text: count.toString() });
-    })()
+    })();
   }, [count]);
 
   useEffect(() => {

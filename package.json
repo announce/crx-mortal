@@ -1,18 +1,18 @@
 {
   "name": "crx-mortal",
-  "version": "1.0.0",
-  "description": "crx-mortal",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "A Chrome extension to help Mahjong players spot their less optimal moves",
   "scripts": {
     "watch": "webpack --config webpack/webpack.dev.js --watch",
     "build": "npm-run-all style clean build:** bundle",
+    "build:manifest": "./app update-manifest-version",
     "build:js": "webpack --config webpack/webpack.prod.js",
-    "bundle": "zip -r dist-$(date +%s).zip ./dist/*",
+    "bundle": "./app bundle-dist",
     "clean": "rimraf dist",
     "test": "npx jest",
     "style": "prettier --write \"src/**/*.{ts,tsx}\" \"public/**/*.{json,html,css}\""
   },
-  "author": "",
+  "author": "Kenta Yamamoto <ymkjp@jaist.ac.jp>",
   "license": "MIT",
   "repository": {
     "type": "git",
