@@ -3,10 +3,14 @@
 [![Build Status](https://travis-ci.org/announce/crx-mortal.svg?branch=master)](https://travis-ci.org/announce/crx-mortal)
 
 
-## Getting Started
+## Getting started
 
 1. Install the extension at [**Chrome Web Store**](https://chrome.google.com/webstore/detail/crx-mortal/fgnhcpkfpdiaeikgdjbgfodclmnpbjno?utm_source=github)
 2. Submit your game log at https://mjai.ekyu.moe/
+
+## How crx-mortal works
+
+This extension annotates your less optimal moves based on the Mortal's score where `πτ​(a∣s)×100 < 5.0`.
 
 ## Development
 
@@ -27,4 +31,4 @@ To release the extension:
 npm run build
 ```
 
-Then submit the bundled package at: [Chrome Developer Dashboard](https://chrome.google.com/webstore/developer/dashboard)
+Then submit the bundled package at [**Chrome Developer Dashboard**](https://chrome.google.com/webstore/developer/dashboard).
